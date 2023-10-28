@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6882904802479212236}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: EnemyTag
+  m_TagString: Bat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,9 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8477d557d3bdca2439cee8f6615f8dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyIsAlive: 1
   EXPGiven: 1
   baseHP: 0
-  EnemyType: 1
-  Enemy: {fileID: 7894349154225794318}
   player: {fileID: 0}

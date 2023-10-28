@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 869.3334
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 211
+  controlID: 130
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 124
+  controlID: 53
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 125
+  controlID: 31
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,8 +217,8 @@ MonoBehaviour:
     y: 0
     width: 452.6667
     height: 483.33334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 265
+  controlID: 54
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,8 +323,8 @@ MonoBehaviour:
     y: 0
     width: 368.66663
     height: 819.3333
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -739,7 +739,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 10.6666565}
+      snapOffset: {x: 48, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
@@ -810,9 +810,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 494.33688, y: 272.16455, z: -0.09839928}
+    m_Target: {x: 3.6336565, y: 2.5996222, z: -3.5221782}
     speed: 2
-    m_Value: {x: 494.33688, y: 272.16455, z: -0.09839928}
+    m_Value: {x: 3.6336565, y: 2.5996222, z: -3.5221782}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -862,9 +862,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 243.9997
+    m_Target: 6.025456
     speed: 2
-    m_Value: 243.9997
+    m_Value: 6.025456
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1030,9 +1030,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7a6d0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 38f4fffff6f8ffff
+      m_ExpandedIDs: 023cffff044affff064affff7c4affff7e4affff304cffff324cffffe055ffffe255ffffe455ffff5856ffff5a56ffff0457ffff0c57ffff5a66ffff1a6cffff80aaffffa0aaffff9caeffffa4aeffffa6aeffffc8afffffcaafffffe4b1ffffecb1ffffeeb1fffff8b5ffff10b6ffff4eb7ffff56b7ffff58b7ffff18beffff2ec5ffff36c5ffff38c5ffff04c8ffffdec9ffffe6c9ffffe8c9ffff28e2ffff50e2ffff52e2ffff08e8ffff9ce8ffff9ee8ffffa0e8ffffa2e8ffff14eeffff1eeeffff3eeeffff4aeeffffcaefffffd4efffff8ef0ffffecf6ffff14f7ffff2cf7ffff1afbfffff26200000c630000266300004a6300006a630000d4660000466900007e690000886e00009a6e00009c700000aa700000ae70000034740000467400001676000028760000ee76000000770000eea7000000a8000086a80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -7404
+  m_LastSelectedObjectID: 43134
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/[Darts]/Prefab
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1146,30 +1146,30 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/[Darts]/Prefab
   m_LastFoldersGridSize: 56
   m_LastProjectPath: C:\Users\pheni\Documents\GitHub\Decay2\Dacay2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec600000
-    m_LastClickedID: 24812
-    m_ExpandedIDs: 00000000e460000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 8c620000
+    m_LastClickedID: 25228
+    m_ExpandedIDs: 00000000326200004a62000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Prefab
+      m_OriginalName: Prefab
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25228
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -1183,7 +1183,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 5e640200
     m_LastClickedID: 156766
-    m_ExpandedIDs: 00000000e460000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000032620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

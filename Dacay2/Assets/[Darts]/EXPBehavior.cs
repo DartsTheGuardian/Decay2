@@ -4,32 +4,46 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EXPBehavior : MonoBehaviour
 {
-    private int TotalEXP = 4;
+    public int TotalEXP = 4;
     public int TotalEXPReceived = 0;
-    private int LVL = 0;
-    public GameObject blackScreen;
+    public int LVL = 0;
     public Text EXPText;
     public EnemyStats ES;
-    //public Text curEXP;
     public Image ProgressBar;
     private float cur_EXP = 0f;
+    public string sceneName;
+    private int MaxLevel = 5;
 
-
-    void Start()
-    {
-        EXPText.text = "EXP : " + TotalEXPReceived + " / " + TotalEXP;
-    }
     void Update()
     {
+        switch (LVL)
+        {
+            case 1:
+                TotalEXP = 8;
+                break;
+            case 2:
+                TotalEXP = 16;
+                break;
+            case 3:
+                TotalEXP = 32;
+                break;
+            case 4:
+                TotalEXP = 64;
+                break;
+            case 5:
+                TotalEXP = 100;
+                break;
+
+        }
 
         EXPText.text = "EXP : " + TotalEXPReceived + " / " + TotalEXP;
-        if (TotalEXPReceived > 0){
-                UpgradeProgressBar();
-        }
+        UpgradeProgressBar();
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             TotalEXPReceived += ES.EXPGiven;
@@ -40,14 +54,22 @@ public class EXPBehavior : MonoBehaviour
         if (TotalEXPReceived == TotalEXP)
         {
             LVL++;
-            blackScreen.SetActive(true);
-            Debug.Log("Current LVL is : " + LVL);
-            TotalEXP = TotalEXP * 2;
+            Debug.Log(LVL);
             TotalEXPReceived = 0;
+            //Time.timeScale = 0;
+            SceneManager.LoadScene(sceneName);
+            // LVLWasGained();
+
         }
     }
 
-        void UpgradeProgressBar()
+    // void LVLWasGained(){
+    //     for(int i = 0; i < MaxLevel; i++){
+    //         TotalEXP += TotalEXP;
+    //     }
+    // }
+
+    void UpgradeProgressBar()
     {
         cur_EXP = TotalEXPReceived;
         float calc_exp = cur_EXP / TotalEXP;

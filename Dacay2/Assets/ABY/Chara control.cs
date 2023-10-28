@@ -11,7 +11,7 @@ public class Characontrol : MonoBehaviour
     public string axis = "Horizontal";
     public string axis2 = "Vertical";
     public float SpeedStat = 5;
-
+    public int Health = 5;
     public float verticalMove = 0, strafeMove = 0;
 
     float life = 60f;

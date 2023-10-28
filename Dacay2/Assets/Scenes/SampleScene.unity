@@ -123,26 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &28888681 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4484887414948718227, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-  m_PrefabInstance: {fileID: 597075808}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &28888687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28888681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5812579220d7e2340936692837fd0bba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelGain: 0
-  LVLTimer: {fileID: 225691689}
-  blackScreen: {fileID: 1278456250}
 --- !u!1 &136315310
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,10 +202,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 136315312}
-  DecayTime: {fileID: 225691689}
+  DecayTime: {fileID: 0}
   axis: Horizontal
   axis2: Vertical
   SpeedStat: 5
+  Health: 5
   verticalMove: 1.56
   strafeMove: 0
   Animations:
@@ -498,46 +479,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f2c55facd361c4c80835bd634e20ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &197129683 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7929532163201488482, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-  m_PrefabInstance: {fileID: 597075808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &212561350 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5860822617212231641, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
   m_PrefabInstance: {fileID: 597075808}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &225691687 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 160104724563331362, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-  m_PrefabInstance: {fileID: 597075808}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &225691689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225691687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78450d6e568580545b57e4b242fde9fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeValue: 60
-  timerText: {fileID: 225691690}
---- !u!114 &225691690 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9058047060094279056, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-  m_PrefabInstance: {fileID: 597075808}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225691687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &250194567
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,11 +619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe89e07523d62c645a8937d4528268f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyType: 0
-  EnemyToSpawn: {fileID: 0}
-  spawnAreaCenter: {x: 0, y: 0, z: 0}
-  spawnAreaSize: {x: 0, y: 0}
-  NumEnemy: 0
+  newTag: Bat
+  EnemyToSpawn: {fileID: 6949195058324838146, guid: 6248eb2857cdfe647bf3101ea38e6f5c, type: 3}
 --- !u!4 &362017249
 Transform:
   m_ObjectHideFlags: 0
@@ -687,7 +630,7 @@ Transform:
   m_GameObject: {fileID: 362017247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9784412, y: -0.69332814, z: -2.0443578}
+  m_LocalPosition: {x: 5.75, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1106,7 +1049,7 @@ PrefabInstance:
     - target: {fileID: 8646894326252358814, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 28888687}
+      objectReference: {fileID: 0}
     - target: {fileID: 8646894326252358814, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LVLUPTIME
@@ -1121,6 +1064,8 @@ PrefabInstance:
     - {fileID: 4088456591629896104, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6634671474548932770, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
+    - {fileID: 160104724563331362, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
+    - {fileID: 7929532163201488482, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5860822617212231641, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
       insertIndex: 0
@@ -1129,15 +1074,9 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 828730592}
     - targetCorrespondingSourceObject: {fileID: 5860822617212231641, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 1590986074}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4484887414948718227, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 28888687}
-    - targetCorrespondingSourceObject: {fileID: 160104724563331362, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 225691689}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
 --- !u!1 &828730591
 GameObject:
@@ -1351,11 +1290,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1688742739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1278456250 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4206836441554380886, guid: 64b9863f6e96b154a9956f3b09be24d7, type: 3}
-  m_PrefabInstance: {fileID: 597075808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1325192484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,11 +1596,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f223922e1677a14f9a5db7c309d58b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TotalEXP: 4
   TotalEXPReceived: 0
-  blackScreen: {fileID: 197129683}
+  LVL: 0
   EXPText: {fileID: 1590986076}
   ES: {fileID: 6882904802479212236, guid: 6248eb2857cdfe647bf3101ea38e6f5c, type: 3}
   ProgressBar: {fileID: 373509180}
+  sceneName: LVLScreen
 --- !u!114 &1590986076
 MonoBehaviour:
   m_ObjectHideFlags: 0
