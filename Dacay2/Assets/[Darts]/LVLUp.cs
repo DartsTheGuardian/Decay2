@@ -18,8 +18,9 @@ public class LVLUp : MonoBehaviour
     public GameObject blackScreen;
     public attack attack;
 
-    void Start(){
-        attack.De
+    void Start()
+    {
+        attack.gameObject.SetActive(false);
     }
 
     public void LevelUp()
@@ -42,7 +43,9 @@ public class LVLUp : MonoBehaviour
         blackScreen.SetActive(false);
     }
 
-    public void LVLUPTIME(){
+    public void LVLUPTIME()
+    {
         LVLTimer.timeValue += 15f;
+        attack.gameObject.SetActive(true);
     }
 }

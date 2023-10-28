@@ -151,10 +151,10 @@
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Ports\ValuePortDefinition.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Math\Vector4\DeprecatedVector4Add.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Nesting\GraphOutput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Control\Throw.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Control\SwitchOnEnum.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Math\Vector4\Vector4Average.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\TriggerCustomEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Control\Throw.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\GUI\OnPointerExit.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Math\Vector3\Vector3Maximum.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\Application\OnApplicationLostFocus.cs" />
