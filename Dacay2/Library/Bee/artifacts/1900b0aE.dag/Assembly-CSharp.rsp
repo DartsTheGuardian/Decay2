@@ -382,6 +382,8 @@
 "Assets/[Darts]/EnemyStats.cs"
 "Assets/[Darts]/EXPBehavior.cs"
 "Assets/[Darts]/LVLUp.cs"
+"Assets/[Darts]/PlayerCollision.cs"
+"Assets/[Darts]/PlayerMovement.cs"
 "Assets/[Darts]/Spawner.cs"
 "Assets/[Darts]/Timer.cs"
 "Assets/[Darts]/TriggerEvent.cs"
