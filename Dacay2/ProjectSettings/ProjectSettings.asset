@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 0a1ecd41f8bc4a34ea9e5dd54e845ecb
+  productGUID: e4641f1a3d5922c43a5442ff59f8f139
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Dacay2
+  productName: Decay
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -625,14 +625,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Dacay2
+  metroPackageName: Decay
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Dacay2
+  metroApplicationDescription: Decay
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -700,10 +700,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: bdf8221f-2c9f-475e-ac2c-3549ac532bee
+  cloudProjectId: 9708633a-1f14-4caa-91f8-7d86f8c57ee0
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Dacay2
+  projectName: Decay
   organizationId: dartstheguardian
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
