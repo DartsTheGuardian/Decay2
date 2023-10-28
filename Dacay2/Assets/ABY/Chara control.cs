@@ -7,10 +7,9 @@ using UnityEngine.TextCore.Text;
 public class Characontrol : MonoBehaviour
 {
     public CharacterController character;
+    public Timer DecayTime;
     public string axis = "Horizontal";
     public string axis2 = "Vertical";
-
-    public float time;
     public float SpeedStat = 5;
 
     public float verticalMove = 0, strafeMove = 0;
@@ -43,7 +42,7 @@ public class Characontrol : MonoBehaviour
 
         //---------------------Anim---------------------------*
          // gestion anim
-        if (time >=50f){
+        if (DecayTime.timeValue >=50f){
             Animations[0].SetActive(true);
             Animations[1].SetActive(false);
             Animations[2].SetActive(false);
@@ -51,28 +50,28 @@ public class Characontrol : MonoBehaviour
             Animations[4].SetActive(false);  
         }
 
-        if (time <50f && time>=40f){
+        if (DecayTime.timeValue <50f && DecayTime.timeValue>=40f){
             Animations[0].SetActive(false);
             Animations[1].SetActive(true);
             Animations[2].SetActive(false);
             Animations[3].SetActive(false);
             Animations[4].SetActive(false);
         }
-        if (time <40f && time>=30f){
+        if (DecayTime.timeValue <40f && DecayTime.timeValue>=30f){
             Animations[0].SetActive(false);
             Animations[1].SetActive(false);
             Animations[2].SetActive(true);
             Animations[3].SetActive(false);
             Animations[4].SetActive(false);
         }
-        if (time <30f && time>=20f){
+        if (DecayTime.timeValue <30f && DecayTime.timeValue>=20f){
             Animations[0].SetActive(false);
             Animations[1].SetActive(false);
             Animations[2].SetActive(false);
             Animations[3].SetActive(true);
             Animations[4].SetActive(false);
         }
-        if (time <20f && time>=0f){
+        if (DecayTime.timeValue <20f && DecayTime.timeValue>=0f){
             Animations[0].SetActive(false);
             Animations[1].SetActive(false);
             Animations[2].SetActive(false);

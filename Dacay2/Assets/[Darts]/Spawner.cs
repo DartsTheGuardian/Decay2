@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
-
+//!Placer spawner, génére enemy aléatoirement, avec cooldown
 public class Spawner : MonoBehaviour
 {
     public enum Type

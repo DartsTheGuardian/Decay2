@@ -16,6 +16,11 @@ public class LVLUp : MonoBehaviour
     public LVLSTATS LevelGain;
     public Timer LVLTimer;
     public GameObject blackScreen;
+    public attack attack;
+
+    void Start(){
+        attack.De
+    }
 
     public void LevelUp()
     {
@@ -31,9 +36,13 @@ public class LVLUp : MonoBehaviour
                 break;
 
             case (LVLSTATS.TIME):
-                LVLTimer.timeValue += 15;
+                LVLUPTIME();
                 break;
         }
         blackScreen.SetActive(false);
+    }
+
+    public void LVLUPTIME(){
+        LVLTimer.timeValue += 15f;
     }
 }

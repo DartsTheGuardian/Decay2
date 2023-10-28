@@ -74,8 +74,9 @@ public class EnemyStats : MonoBehaviour
             if (player != null)
             {
                 transform.LookAt(player);
-                transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.forward,
-                mainCamera.transform.rotation * Vector3.up);
+                // transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.forward,
+                // mainCamera.transform.rotation * Vector3.up);
+                transform.right = player.position - transform.position;
                 transform.position = Vector3.MoveTowards(transform.position, player.position, 1.5f * Time.deltaTime);
             }
         }
