@@ -66,12 +66,14 @@
   <ItemGroup>
     <Compile Include="Assets\ABY\Cursor.cs" />
     <Compile Include="Assets\[Darts]\PlayerMovement.cs" />
+    <Compile Include="Assets\[Darts]\HealthBehavior.cs" />
     <Compile Include="Assets\ABY\Rope.cs" />
     <Compile Include="Assets\[Darts]\CameraMove.cs" />
     <Compile Include="Assets\[Darts]\LVLUp.cs" />
     <Compile Include="Assets\[Darts]\Spawner.cs" />
     <Compile Include="Assets\ABY\Chara control.cs" />
     <Compile Include="Assets\[Darts]\EnemyStats.cs" />
+    <Compile Include="Assets\[Darts]\EndGame.cs" />
     <Compile Include="Assets\[Darts]\Timer.cs" />
     <Compile Include="Assets\[Darts]\PlayerCollision.cs" />
     <Compile Include="Assets\attack.cs" />

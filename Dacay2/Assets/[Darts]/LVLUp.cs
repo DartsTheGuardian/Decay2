@@ -6,26 +6,46 @@ using UnityEngine.SceneManagement;
 
 public class LVLUp : MonoBehaviour
 {
-    public string sceneName;
     public Characontrol LVLSpeed;
     public attack LVLFirerate;
     public Characontrol LVLHealth;
+    public HealthBehavior LVLcurHealth;
+    public GameObject LVLUpScreen;
+    public GameObject HealthBarSetUp;
+    public GameObject EXPBarSetUp;
+    public GameObject cursor;
 
 
-    public void LVLUPATTACK(){
+    public void LVLUPATTACK()
+    {
         //Do stuff
     }
-    public void LVLUPSPEED(){
+    public void LVLUPSPEED()
+    {
         LVLSpeed.SpeedStat += 2;
-                SceneManager.LoadScene(sceneName);
+        HealthBarSetUp.SetActive(true);
+        EXPBarSetUp.SetActive(true);
+        cursor.SetActive(true);
+        LVLUpScreen.SetActive(false);
+        Time.timeScale = 1;
     }
-    public void LVLUPFIRERATE(){
-        LVLFirerate.AttackSpeed+=2;
-        SceneManager.LoadScene(sceneName);
+    public void LVLUPFIRERATE()
+    {
+        LVLFirerate.AttackSpeed += 2;
+        HealthBarSetUp.SetActive(true);
+        EXPBarSetUp.SetActive(true);
+        cursor.SetActive(true);
+        LVLUpScreen.SetActive(false);
+        Time.timeScale = 1;
     }
     public void LVLUPHEALTH()
     {
-        LVLHealth.Health += 2;
-        SceneManager.LoadScene(sceneName);
+        LVLHealth.BaseHealth += 2;
+        LVLcurHealth.cur_health +=2 ;
+        HealthBarSetUp.SetActive(true);
+        EXPBarSetUp.SetActive(true);
+        cursor.SetActive(true);
+        LVLUpScreen.SetActive(false);
+        Time.timeScale = 1;
     }
 }

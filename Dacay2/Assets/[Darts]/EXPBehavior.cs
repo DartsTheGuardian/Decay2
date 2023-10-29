@@ -16,27 +16,37 @@ public class EXPBehavior : MonoBehaviour
     public EnemyStats ES;
     public Image ProgressBar;
     private float cur_EXP = 0f;
-    public string sceneName;
+    public GameObject LVLUpScreen;
+    public GameObject HealthBarSetUp;
+    public GameObject EXPBarSetUp;
+    
+    public GameObject cursor;
     private int MaxLevel = 5;
 
     void Update()
     {
         switch (LVL)
         {
+            case 0:
+            TotalEXP =4;
+            break;
             case 1:
                 TotalEXP = 8;
                 break;
             case 2:
-                TotalEXP = 16;
+                TotalEXP = 15;
                 break;
             case 3:
-                TotalEXP = 32;
+                TotalEXP = 30;
                 break;
             case 4:
-                TotalEXP = 64;
+                TotalEXP = 40;
                 break;
             case 5:
-                TotalEXP = 100;
+                TotalEXP = 50;
+                break;
+                default:
+                TotalEXP = 50;
                 break;
 
         }
@@ -56,18 +66,14 @@ public class EXPBehavior : MonoBehaviour
             LVL++;
             Debug.Log(LVL);
             TotalEXPReceived = 0;
-            //Time.timeScale = 0;
-            SceneManager.LoadScene(sceneName);
-            // LVLWasGained();
+            Time.timeScale = 0;
+            HealthBarSetUp.SetActive(false);
+            EXPBarSetUp.SetActive(false);
+            cursor.SetActive(false);
+            LVLUpScreen.SetActive(true);
 
         }
     }
-
-    // void LVLWasGained(){
-    //     for(int i = 0; i < MaxLevel; i++){
-    //         TotalEXP += TotalEXP;
-    //     }
-    // }
 
     void UpgradeProgressBar()
     {

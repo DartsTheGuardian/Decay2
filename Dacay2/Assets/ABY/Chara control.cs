@@ -7,15 +7,12 @@ using UnityEngine.TextCore.Text;
 public class Characontrol : MonoBehaviour
 {
     public CharacterController character;
-    public Timer DecayTime;
     public string axis = "Horizontal";
     public string axis2 = "Vertical";
     public float SpeedStat = 5;
-    public int Health = 5;
+    public int BaseHealth = 5;
+    public HealthBehavior CurHealth;
     public float verticalMove = 0, strafeMove = 0;
-
-    float life = 60f;
-
     public GameObject[] Animations;
 
     void Start()
@@ -42,7 +39,7 @@ public class Characontrol : MonoBehaviour
 
         //---------------------Anim---------------------------*
          // gestion anim
-        if (DecayTime.timeValue >=50f){
+        if (CurHealth.cur_health / BaseHealth >= 0.80f){
             Animations[0].SetActive(true);
             Animations[1].SetActive(false);
             Animations[2].SetActive(false);
@@ -50,28 +47,28 @@ public class Characontrol : MonoBehaviour
             Animations[4].SetActive(false);  
         }
 
-        if (DecayTime.timeValue <50f && DecayTime.timeValue>=40f){
+        if (CurHealth.cur_health / BaseHealth < 0.80f && CurHealth.cur_health / BaseHealth >= 0.60f){
             Animations[0].SetActive(false);
             Animations[1].SetActive(true);
             Animations[2].SetActive(false);
             Animations[3].SetActive(false);
             Animations[4].SetActive(false);
         }
-        if (DecayTime.timeValue <40f && DecayTime.timeValue>=30f){
+        if (CurHealth.cur_health / BaseHealth < 0.60 && CurHealth.cur_health / BaseHealth >= 0.40){
             Animations[0].SetActive(false);
             Animations[1].SetActive(false);
             Animations[2].SetActive(true);
             Animations[3].SetActive(false);
             Animations[4].SetActive(false);
         }
-        if (DecayTime.timeValue <30f && DecayTime.timeValue>=20f){
+        if (CurHealth.cur_health / BaseHealth < 0.40 && CurHealth.cur_health / BaseHealth >= 0.20){
             Animations[0].SetActive(false);
             Animations[1].SetActive(false);
             Animations[2].SetActive(false);
             Animations[3].SetActive(true);
             Animations[4].SetActive(false);
         }
-        if (DecayTime.timeValue <20f && DecayTime.timeValue>=0f){
+        if (CurHealth.cur_health / BaseHealth < 0.20 && CurHealth.cur_health / BaseHealth >= 0){
             Animations[0].SetActive(false);
             Animations[1].SetActive(false);
             Animations[2].SetActive(false);
