@@ -13,7 +13,7 @@ public class PlayerCollision : MonoBehaviour
     }
 
     void Update(){
-        if (InvFrame >= 5f){
+        if (InvFrame >= 2f){
             vulnerable = true;
         } else {
             vulnerable = false;

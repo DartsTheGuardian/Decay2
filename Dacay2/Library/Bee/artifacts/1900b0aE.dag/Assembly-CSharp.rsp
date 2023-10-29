@@ -378,6 +378,7 @@
 "Assets/ABY/Rope.cs"
 "Assets/attack.cs"
 "Assets/BasicAttack.cs"
+"Assets/[Darts]/CameraFollow.cs"
 "Assets/[Darts]/CameraMove.cs"
 "Assets/[Darts]/EndGame.cs"
 "Assets/[Darts]/EnemyStats.cs"

@@ -22,7 +22,7 @@ public class LVLUp : MonoBehaviour
     }
     public void LVLUPSPEED()
     {
-        LVLSpeed.SpeedStat += 2;
+        LVLSpeed.SpeedStat += 3;
         HealthBarSetUp.SetActive(true);
         EXPBarSetUp.SetActive(true);
         cursor.SetActive(true);
